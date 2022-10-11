@@ -73,6 +73,12 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
+    .configureWatchOptions(options=> {
+        options.poll = 250;
+    })
+    .configureDevServerOptions(options => {
+        options.allowedHosts = 'all';
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();
