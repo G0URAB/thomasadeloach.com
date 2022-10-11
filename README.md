@@ -3,7 +3,7 @@
 - Start the docker service. Then clone the project. After that, in the root folder run the following command
 > docker-compose up --build
 - If everything went well, then the project website can be visited at **localhost:8080**
-- This project has one more dependency i.e. Node.JS. Currently, hot reload is not working inside the app container. Therefore, we will have to do that manually. 
+- This project has one more dependency i.e. Node.JS. Currently, hot reload is not working inside the node container. Therefore, we will have to do that manually. 
 Install Node JS globally. Go to **app** folder and run the following command
 > npm run watch
 
