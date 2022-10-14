@@ -10,7 +10,8 @@
         Pastor Thomas
       </div>
       <div id="nav-links">
-        <router-link to="/" class="nav-link">About</router-link>
+        <router-link to="/" class="nav-link">Home</router-link>
+        <router-link to="/about" class="nav-link">About</router-link>
         <router-link to="/episodes" class="nav-link">Episodes</router-link>
         <router-link to="/blog" class="nav-link">Blog</router-link>
         <router-link to="/contact" class="nav-link">Contact</router-link>
