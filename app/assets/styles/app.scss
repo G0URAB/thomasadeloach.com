@@ -1,0 +1,11 @@
+@import "home";
+
+@font-face {
+    font-family: customRoboto;
+    src: url("../fonts/roboto/static/RobotoSlab-Regular.ttf")
+}
+
+body {
+    margin: 0;
+    font-family: customRoboto, serif;
+}

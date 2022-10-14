@@ -1,0 +1,208 @@
+@import "colors";
+
+@mixin columnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+
+  .hero {
+    background: url("https://www.thomasadeloach.com/wp-content/uploads/2020/11/Untitled-4.png");
+    width: 100%;
+    height: 500px;
+  }
+
+  .hero-sub {
+    background: $primaryBlue;
+    height: 200px;
+    display: flex;
+
+    .pastor-thomas {
+      position: absolute;
+      bottom: 20%;
+      left: 20%;
+      @media only screen and (max-width: 1400px) {
+        top: 15%;
+        left: 10%;
+      }
+    }
+
+    .blank-left {
+      min-width: 400px;
+      height: 100%;
+      width: 30%;
+    }
+
+    .listen-to-podcasts {
+      width: 70%;
+      min-width: 500px;
+      height: 100%;
+      //border: 1px solid yellow;
+      float: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .podcast-wrapper {
+        width: 60%;
+        @media only screen and (max-width: 1400px) {
+          width: 65%;
+        }
+        display: flex;
+        justify-content: space-between;
+
+        .podcast {
+          width: 200px;
+          @media only screen and (max-width: 1400px) {
+            width: 150px;
+          }
+          border-radius: 20px;
+          background: $secondaryBlue;
+          height: 80px;
+          @include columnCenter;
+          color: white;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .about-me {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+      color: $headingColor;
+    }
+
+    .content {
+      margin-top: 20px;
+      width: 80%;
+      max-width: 850px;
+      line-height: 1.6;
+      font-size: 18px;
+      color: $contentColor;
+    }
+
+    .read-more {
+      a {
+        font-style: italic;
+        color: blue;
+      }
+    }
+  }
+
+  .empowerment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .heading {
+      color: $headingColor;
+    }
+
+    .content {
+      margin-top: 20px;
+      max-width: 850px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .empowerment-feature {
+        width: 350px;
+        @include columnCenter;
+
+        .empower-icon {
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          border: 4px solid $buttonBlue;
+          @include columnCenter;
+
+          i {
+            font-size: 35px;
+          }
+        }
+
+        .empower-heading {
+          height: 20px;
+          color: $headingColor;
+        }
+
+        .empower-text {
+          height: 150px;
+          line-height: 1.6;
+          text-align: center;
+          font-size: 18px;
+          color: $contentColor;
+        }
+      }
+    }
+  }
+
+  .hurry-limited-slots {
+    width: 100%;
+    height: 300px;
+    background: $tertiaryBlue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .announcements {
+      width: 60%;
+      min-width: 500px;
+
+      .text {
+        font-size: 45px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+
+      .buttons {
+        margin-top: 25px;
+        display: flex;
+        justify-content: end;
+        .button {
+          width: 200px;
+          background: $buttonBlue;
+          padding: 15px;
+          border-radius: 30px;
+          text-align: center;
+          color: white;
+          &:hover {
+            cursor: pointer;
+            transform:scale(1.3,1.3);
+            -webkit-transform:scale(1.3,1.3);
+            -moz-transform:scale(1.3,1.3);
+            -webkit-transition: transform 1.05s ease-in-out;
+            -moz-transition:transform 1.05s ease-in-out;
+            -ms-transition:transform 1.05s ease-in-out;
+          }
+        }
+        .button:first-of-type {
+          margin-right: 5%;
+        }
+      }
+    }
+
+    .micro-phone {
+      width: 40%;
+      min-width: 200px;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
