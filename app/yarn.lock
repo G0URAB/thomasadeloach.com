@@ -913,6 +913,11 @@
   "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-6.2.0.tgz"
   "version" "6.2.0"
 
+"@glidejs/glide@^3.6.0":
+  "integrity" "sha512-47Aa+JmYjY4xTFpTtYCwrqirmI1arnp1UZETwtWpbTPisXUAuxrdJxKJLH8KHFWMsSrLi9+AcfyfzDIuO75rEA=="
+  "resolved" "https://registry.npmjs.org/@glidejs/glide/-/glide-3.6.0.tgz"
+  "version" "3.6.0"
+
 "@hotwired/stimulus-webpack-helpers@^1.0.1":
   "integrity" "sha512-wa/zupVG0eWxRYJjC1IiPBdt3Lruv0RqGN+/DTMmUWUyMAEB27KXmVY6a8YpUVTM7QwVuaLNGW4EqDgrS2upXQ=="
   "resolved" "https://registry.npmjs.org/@hotwired/stimulus-webpack-helpers/-/stimulus-webpack-helpers-1.0.1.tgz"

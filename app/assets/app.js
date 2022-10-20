@@ -8,6 +8,8 @@
 // any CSS you import will output into a single css file (app.scss in this case)
 import './styles/app.scss';
 import '@fortawesome/fontawesome-free/css/all.css'
+import '@glidejs/glide/src/assets/sass/glide.core.scss';
+import "@glidejs/glide/src/assets/sass/glide.theme.scss";
 
 // start the Stimulus application
 import './bootstrap';

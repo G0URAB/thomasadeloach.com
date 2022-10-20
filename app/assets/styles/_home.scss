@@ -13,6 +13,85 @@
     background: url("https://www.thomasadeloach.com/wp-content/uploads/2020/11/Untitled-4.png");
     width: 100%;
     height: 500px;
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+      /*border: 2px solid greenyellow;*/
+      margin-top: 1%;
+      width: 52%;
+      @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+        width: 60%;
+      }
+      @media only screen and (min-width: 900px) and (max-width: 1200px) {
+        width: 80%;
+      }
+      display: flex;
+      justify-content: flex-end;
+      .signup-box {
+        background: white;
+        border-radius: 20px;
+        height: 98%;
+        border: 1px solid black;
+        width: 400px;
+        @include columnCenter;
+        justify-content: flex-start;
+        .header {
+          padding: 15px;
+          font-size: 30px;
+          font-weight: bold;
+          color: white;
+          background: $primaryBlue;
+          border-radius: 20px 20px 0 0;
+          text-align: center;
+        }
+        .sample-mp3 {
+          height: 40px;
+          background: $headingColor;
+          width: 100%;
+        }
+        .content {
+          padding: 20px;
+          height: 270px;
+          @include columnCenter;
+          justify-content: space-between;
+          .text-1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            color: #263957;
+          }
+          .text-2 {
+            font-size: 24px;
+            text-align: center;
+            color: $buttonBlue;
+            font-weight: bold;
+          }
+          .user-input {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            input {
+              width: 165px;
+              height: 28px;
+              background: #F2F2F2;
+              border-width: 0 0 0 0;
+              padding: 5px;
+              font-size: 16px;
+              border-radius: 4px;
+            }
+          }
+          .button {
+            background: orangered;
+            width: 90%;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 
   .hero-sub {
@@ -156,6 +235,8 @@
     background: $tertiaryBlue;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    margin-top: 80px;
 
     .announcements {
       width: 60%;
@@ -199,6 +280,61 @@
     .micro-phone {
       width: 40%;
       min-width: 200px;
+
+      img {
+        position: relative;
+        bottom: 28%;
+        left: 20%;
+      }
+    }
+  }
+
+  .testimonials {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background: #e3e6e8;
+    @include columnCenter;
+
+    .glide {
+      width: 80%;
+      .glide__track {
+        width: 100%;
+        border: 1px solid #c1c2bf;
+        background: white;
+
+        .glide__slides {
+          width: 100%;
+          .glide__slide {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            .text {
+              font-size: 1.3em;
+              font-style: italic;
+              line-height: 1.5;
+              color: $contentColor;
+            }
+            .author {
+              margin-top: 15px;
+              color: $headingColor;
+              font-weight: bold;
+            }
+
+          }
+          .glide__slide--active {
+            width: 100%;
+          }
+        }
+      }
+      .glide-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        .glide__bullet--active {
+          background: black;
+        }
+      }
     }
   }
 }
